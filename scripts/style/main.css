@@ -1,0 +1,276 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 10px;
+}
+
+
+/* Header */
+header {
+    min-height: 56px;
+
+}
+
+/* Navigation */
+.navDesktop,
+.navMobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    box-shadow: rgba(0, 0, 0, 0.267)  0 0 20px 5px ;
+    
+}
+
+.navDesktop ul,
+.navMobile ul{ 
+    display: flex;
+    list-style: none;
+    color: #f8f3dd;
+
+}
+.navDesktop ul li,
+.navMobile ul li{
+    padding: 0 40px;
+}
+.navDesktop ul li a,
+.navMobile ul li a{
+    color: #000000;
+    text-decoration: none; 
+    margin-top: 20px;
+    font-size: 2em;  
+    text-align: center;
+}
+
+.navDesktop ul li a:hover,
+.navMobile ul li a:hover{
+    color: #60AA60;
+    border-bottom: solid 1px #60AA60;
+
+}
+
+.nav__logo {
+    width: 150px;
+    height: 100%;
+    display: block;
+
+}
+
+
+.navMobile {
+    display: none;
+}
+
+@keyframes slide {
+    25%{
+        background-image: url('../../img/OIL.jpg');
+        background-size: cover;
+        min-height: 733px;
+        width: 100%;
+        background-position: center;
+    }
+}
+/* Hero Element */
+.hero{
+    min-height: 733px;
+    width: 100%;
+    background-image: url('../../img/OIP.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slide 45s infinite;
+    overflow: hidden;
+    
+ 
+}
+.hero__judul{
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-top: 550px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero__desc{
+    display: flex;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-left: 50px;
+    margin-top: -20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Main */
+main {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.mandalika {
+    display: flex;
+    border-radius: 50px;
+    background-color:#6E60A8;
+    background-size: cover;
+    width: 549px;
+    height: 316px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.mandalika__desc {
+    padding-left: 50px;
+}
+.mandalika__desc h1{
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 100px;
+    color: #6E60A8;
+    
+}
+.mandalika__desc p{
+    font-weight: 400;
+    text-align: justify;
+    font-size: 25px;
+    
+}
+
+.landing__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+    color: #6E60A8;
+    margin-top: 100px;
+
+}
+.wisata_detail_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.wisata_detail{
+    display: flex;
+    justify-content: center;
+    width: 241px;
+    height: 82px;   
+    border-radius: 53px;
+    box-shadow: rgba(0, 0, 0, 0.158)  0 -10px 20px 2px;
+    padding-top: 20px;
+}
+.wisata_detail a{
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F58646;
+}
+
+.wisata_detail:active{
+    background-color: #F58646;
+}
+.wisata_detail a:active{
+    color: white;
+}
+
+.detail__container { 
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    margin-bottom: 300px;
+    overflow-y: hidden;
+    padding-bottom: 80px;
+}
+
+
+.detail__item img{
+    margin-top: 100px;
+    width: 549px;
+    height: 416px;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.detail__item a{
+    display: flex;
+    font-weight: 700;
+    font-size: 48px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.hero__detail img{
+    display: flex;
+    min-height: 733px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.detailed__container{
+    border-bottom: 5px solid black;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.detailed__judul{
+    font-weight: 700;
+    font-size: 128px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.detailed__desc{
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    text-align: justify;
+}
+
+footer {
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.158)  0 -10px 20px 2px ;
+}
