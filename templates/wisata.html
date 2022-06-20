@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#">
+    <link rel="icon" href="">
     <title>Beauty Of Lombok</title>
     <link rel="stylesheet" href="../scripts/style/main.css">
+    <link rel="stylesheet" href="../scripts/style/responsive.css">
     
 </head>
 <body>
@@ -16,27 +17,28 @@
             <!-- Desktop Navbar -->
             <nav id="drawer" class="navDesktop">
                 <a href="./index.html">
-                    <img src="" class="nav__logo" alt="logo">
+                    <img src="../img/logo panjang.png" class="nav__logo" alt="logo">
                 </a>
 
                 <ul class="nav__list">
-                    <li><a href="#" class="nav__item">Wisata</a></li>
+                    <li><a href="../templates/wisata.html" class="nav__item">Wisata</a></li>
                     <li><a href="#" class="nav__item">Budaya</a></li>
-                    <li><a href="#" class="nav__item">Saran</a></li>
+                    <li><a href="../templates/saran.html" class="nav__item">Saran</a></li>
                     <li><a href="#" class="nav__item">AboutUs</a></li>
                 </ul>
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span class="m1"></span>
+                    <span class="m2"></span>
+                    <span class="m3"></span>
+                </div>
             </nav>
+            <button id="menu" class="header__menu" href="#" aria-label="navigation-menu">☰</button>
         </div>
-
-        <!-- App Navbar -->
-        <nav id="drawerMob" class="navMobile">
-            <ul class="nav__list">
-            </ul>
-        </nav>
     </header>
 
-    <main id="content">
-        <div class="content__container">
+    <main id="contentWisata">
+        <div class="content__container__wisata">
             <div class="judul">
                 Destinasi Wisata
             </div>
@@ -93,3 +95,12 @@
 </footer>
 </body>
 </html>
+<script>
+    /* Navbar Menu SLider*/
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+    
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+    });
+    </script>
