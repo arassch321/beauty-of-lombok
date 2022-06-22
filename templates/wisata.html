@@ -8,6 +8,7 @@
     <title>Beauty Of Lombok</title>
     <link rel="stylesheet" href="../scripts/style/main.css">
     <link rel="stylesheet" href="../scripts/style/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
 </head>
 <body>
@@ -21,10 +22,10 @@
                 </a>
 
                 <ul class="nav__list">
-                    <li><a href="../templates/wisata.html" class="nav__item">Wisata</a></li>
-                    <li><a href="#" class="nav__item">Budaya</a></li>
-                    <li><a href="../templates/saran.html" class="nav__item">Saran</a></li>
-                    <li><a href="#" class="nav__item">AboutUs</a></li>
+                    <li><a href="../templates/wisata.html" class="nav__detail__item">Wisata</a></li>
+                    <li><a href="#" class="nav__detail__item">Budaya</a></li>
+                    <li><a href="../templates/saran.html" class="nav__detail__item">Saran</a></li>
+                    <li><a href="#" class="nav__detail__item">AboutUs</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <input type="checkbox">
@@ -58,37 +59,65 @@
             </div>
         </div>
         
-        <div class="detail__container">
-            <div class="detail__item" href="">
-                <img src="../img/OIL.jpg" alt="asdasd">
-                <a href="../templates/detail.html">Rinjani</a>
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">Rinjanooo</a>   
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">tes123123</a>
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">tes123123</a>
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">tes123123</a>
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">tes123123</a>
-            </div>
-            <div class="detail__item">
-                <img src="../img/OIP.jpg" alt="asdasd">
-                <a href="">tes123123</a>
-            </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="detail__item swiper-slide" href="">
+                    <img src="../img/OIL.jpg" alt="asdasd">
+                    <a href="../templates/detail.html">Rinjani</a>
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">Rinjanooo</a>   
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">tes123123</a>
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">tes123123</a>
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">tes123123</a>
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">tes123123</a>
+                </div>
+                <div class="detail__item swiper-slide">
+                    <img src="../img/OIP.jpg" alt="asdasd">
+                    <a href="">tes123123</a>
+                </div>
 
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
+
+        
+        <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     </main>
 <footer>
     Beauty Of Lombok, Copyright &copy; 2022 by CPSG-68
@@ -103,4 +132,4 @@
     menuToggle.addEventListener('click', function() {
         nav.classList.toggle('slide');
     });
-    </script>
+</script>

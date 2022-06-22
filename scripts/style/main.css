@@ -55,7 +55,7 @@ header {
     padding: 0 40px;
 }
 .navDesktop ul li a{
-    color: #000000;
+    color: #323232;
     text-decoration: none; 
     margin-top: 20px;
     font-size: 2em;  
@@ -245,15 +245,31 @@ main {
     color: white;
 }
 
-.detail__container { 
-    display: flex;
-    flex-direction: row;
-    padding-left: 100px;
-    margin-bottom: 300px;
-    overflow-y: hidden;
-    padding-bottom: 80px;
+
+
+.swiper{
+    width: 90%;
 }
 
+.swiper-wrapper{
+    margin-bottom: 120px;
+}
+
+.swiper-pagination-bullet {
+    height: 7px !important;
+    width: 26px !important;
+    border-radius: 25px !important;
+    margin-bottom: 20px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #6E60A8 !important;
+}
+
+
+.swiper-button-next, .swiper-button-prev{
+    color: #6E60A8 !important;
+}
 
 .detail__item img{
     margin-top: 100px;
@@ -283,15 +299,17 @@ main {
 }
 
 .detailed__container{
-    border-bottom: 5px solid black;
-    margin-bottom: 100px;
+    border-bottom: 5px solid #323232;
+    margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .detailed__judul{
+    color: #323232;
+    padding-top: 10px;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 32px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -299,12 +317,14 @@ main {
 }
 
 .detailed__desc{
+    color: #4e4e4e;
     font-weight: 400;
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
     justify-content: center;
     text-align: justify;
+    margin-bottom: 50px;
 }
 
 .content__container{
@@ -319,7 +339,7 @@ main {
     justify-content: center;
     display: flex;
     color: #6E60A8;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #000000;
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;

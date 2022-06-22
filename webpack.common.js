@@ -7,7 +7,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/scripts/index.js'),
+  entry: path.resolve(__dirname, '../scripts/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -63,7 +63,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/templates/index.html'),
+      template: path.resolve(__dirname, 'templates/index.html'),
       filename: 'index.html',
     }),
     new CopyWebpackPlugin({
