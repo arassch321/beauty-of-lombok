@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jun 2022 pada 08.27
+-- Waktu pembuatan: 23 Jun 2022 pada 23.14
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 8.0.8
 
@@ -18,36 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_bol`
+-- Database: `bol`
 --
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `adat`
---
-
-CREATE TABLE `adat` (
-  `id_adat` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `airterjun`
---
-
-CREATE TABLE `airterjun` (
-  `id_airterjun` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -57,66 +29,12 @@ CREATE TABLE `airterjun` (
 
 CREATE TABLE `budaya` (
   `id_budaya` int(11) NOT NULL,
-  `kuliner_id_kuliner` int(11) NOT NULL,
-  `kesenian_id_kesenian` int(11) NOT NULL,
-  `adat_id_adat` int(11) NOT NULL,
-  `etcb_id_etcb` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `etcb`
---
-
-CREATE TABLE `etcb` (
-  `id_etcb` int(11) NOT NULL,
+  `jenis` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
+  `desk` longtext NOT NULL,
   `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `etcw`
---
-
-CREATE TABLE `etcw` (
-  `id_etcw` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `gunbuk`
---
-
-CREATE TABLE `gunbuk` (
-  `id_gunbuk` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `kesenian`
---
-
-CREATE TABLE `kesenian` (
-  `id_kesenian` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
+  `lokasi` varchar(255) NOT NULL,
+  `komentar_id_komentar` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -130,38 +48,7 @@ CREATE TABLE `komentar` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `komentar` longtext NOT NULL,
   `nama` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `wisata_id_wisata` int(11) NOT NULL,
-  `budaya_id_budaya` int(11) NOT NULL,
-  `budaya_etcb_id_etcb` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `kuliner`
---
-
-CREATE TABLE `kuliner` (
-  `id_kuliner` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `pantai`
---
-
-CREATE TABLE `pantai` (
-  `id_pantai` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `desk` varchar(255) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `lokasi` varchar(255) NOT NULL
+  `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -172,8 +59,24 @@ CREATE TABLE `pantai` (
 
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
-  `User` varchar(255) NOT NULL,
+  `user` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `wisata`
+--
+
+CREATE TABLE `wisata` (
+  `id_wisata` int(11) NOT NULL,
+  `jenis` int(11) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `desk` longtext NOT NULL,
+  `gambar` varchar(255) NOT NULL,
+  `lokasi` varchar(255) NOT NULL,
+  `komentar_id_komentar` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -181,46 +84,11 @@ CREATE TABLE `user` (
 --
 
 --
--- Indeks untuk tabel `adat`
---
-ALTER TABLE `adat`
-  ADD PRIMARY KEY (`id_adat`);
-
---
--- Indeks untuk tabel `airterjun`
---
-ALTER TABLE `airterjun`
-  ADD PRIMARY KEY (`id_airterjun`);
-
---
 -- Indeks untuk tabel `budaya`
 --
 ALTER TABLE `budaya`
-  ADD PRIMARY KEY (`id_budaya`,`etcb_id_etcb`);
-
---
--- Indeks untuk tabel `etcb`
---
-ALTER TABLE `etcb`
-  ADD PRIMARY KEY (`id_etcb`);
-
---
--- Indeks untuk tabel `etcw`
---
-ALTER TABLE `etcw`
-  ADD PRIMARY KEY (`id_etcw`);
-
---
--- Indeks untuk tabel `gunbuk`
---
-ALTER TABLE `gunbuk`
-  ADD PRIMARY KEY (`id_gunbuk`);
-
---
--- Indeks untuk tabel `kesenian`
---
-ALTER TABLE `kesenian`
-  ADD PRIMARY KEY (`id_kesenian`);
+  ADD PRIMARY KEY (`id_budaya`),
+  ADD KEY `budaya_komentar_fk` (`komentar_id_komentar`);
 
 --
 -- Indeks untuk tabel `komentar`
@@ -229,32 +97,33 @@ ALTER TABLE `komentar`
   ADD PRIMARY KEY (`id_komentar`);
 
 --
--- Indeks untuk tabel `kuliner`
---
-ALTER TABLE `kuliner`
-  ADD PRIMARY KEY (`id_kuliner`);
-
---
--- Indeks untuk tabel `pantai`
---
-ALTER TABLE `pantai`
-  ADD PRIMARY KEY (`id_pantai`);
-
---
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- Indeks untuk tabel `wisata`
+--
+ALTER TABLE `wisata`
+  ADD PRIMARY KEY (`id_wisata`),
+  ADD KEY `wisata_komentar_fk` (`komentar_id_komentar`);
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- Ketidakleluasaan untuk tabel `budaya`
 --
-ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `budaya`
+  ADD CONSTRAINT `budaya_komentar_fk` FOREIGN KEY (`komentar_id_komentar`) REFERENCES `komentar` (`id_komentar`);
+
+--
+-- Ketidakleluasaan untuk tabel `wisata`
+--
+ALTER TABLE `wisata`
+  ADD CONSTRAINT `wisata_komentar_fk` FOREIGN KEY (`komentar_id_komentar`) REFERENCES `komentar` (`id_komentar`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
