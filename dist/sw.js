@@ -4,6 +4,9 @@ var serviceWorkerOption = {
     "/9e8b2526969477340b75e6b10bf7c079.jpg",
     "/0.bundle.js",
     "/bundle.js",
+    "/logo panjang.png",
+    "/heros/OIL.jpg",
+    "/heros/OIP.jpg",
     "/index.html"
   ]
 };

@@ -5,9 +5,7 @@ class Footer extends HTMLElement {
   
     render() {
       this.innerHTML = `
-        <footer>
             Beauty Of Lombok, Copyright &copy; 2022 by CPSG-68
-        </footer>
       `;
     }
   }

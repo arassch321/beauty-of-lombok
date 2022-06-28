@@ -8,13 +8,13 @@ class Navigation extends HTMLElement {
       <div class="header__inner">
       <!-- Desktop Navbar -->
       <nav id="drawer" class="navDesktop">
-          <a href="./index.html">
-              <img src="../img/logo panjang.png" class="nav__logo" alt="logo">
+          <a href="/#">
+              <img src="/logo panjang.png" class="nav__logo" alt="logo">
           </a>
           <ul class="nav__list">
-              <li><a href="../templates/wisata.html" class="nav__item">Wisata</a></li>
-              <li><a href="#" class="nav__item">Budaya</a></li>
-              <li><a href="../templates/saran.html" class="nav__item">Saran</a></li>
+              <li><a href="/#/wisata" class="nav__item">Wisata</a></li>
+              <li><a href="#/budaya" class="nav__item">Budaya</a></li>
+              <li><a href="/#/saran" class="nav__item">Saran</a></li>
               <li><a href="" class="nav__item">AboutUs</a></li>
           </ul>
           <div class="menu-toggle">

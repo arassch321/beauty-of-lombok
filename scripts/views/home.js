@@ -5,7 +5,6 @@ const home = {
         <h1 class="hero__judul">Wisata dan Budaya</h1>
         <p class="hero__desc">di daerah pulau lombok</p>
     </div>
-    <main>
         <div class="landing__container">
             <div class="mandalika">
 
@@ -17,7 +16,6 @@ const home = {
             </div>
 
         </div>
-    </main>
     `;
   },
 

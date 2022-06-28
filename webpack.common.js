@@ -66,18 +66,18 @@ module.exports = {
       template: path.resolve(__dirname, 'templates/index.html'),
       filename: 'index.html',
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, 'img/'),
-    //       to: path.resolve(__dirname, 'dist/'),
-    //       globOptions: {
-    //         ignore: ['**/images/heros**'],
-    //       },
-    //     },
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'img/'),
+          to: path.resolve(__dirname, 'dist/'),
+          // globOptions: {
+          //   ignore: ['heros'],
+          // },
+        },
 
-    //   ],
-    // }),
+      ],
+    }),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
