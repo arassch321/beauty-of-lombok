@@ -1,3 +1,6 @@
+import bolDataSource from "../data/data-bol";
+import { createAdat } from "./template/template-creator"
+
 const Budaya = {
     async render() {
       return `
@@ -7,7 +10,7 @@ const Budaya = {
             </div>
             <div class="wisata_detail_container">
                 <div class="wisata_detail">
-                    <a href="/#/wisata">Pantai</a>
+                    <a href="/#/budaya">Adat</a>
                 </div>
                 <div class="wisata_detail">
                     <a href="">Gunung</a>
@@ -22,23 +25,24 @@ const Budaya = {
         </div>
         
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="detail__item swiper-slide" href="">
-                    <img src="heros/OIL.jpg" alt="asdasd">
-                    <a href="/#">Pasir Pink</a>
+            <div class="swiper-wrapper" >
+                <div class="detail__item swiper-slide" id="item-container">
                 </div>
-                <div class="detail__item swiper-slide" href="">
-                    <img src="heros/OIP.jpg" alt="asdasd">
-                    <a href="/#">Rinjani</a>
-                </div>
+
             </div>
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-        
-      `;
+        <div id='item-creator'>
+        </div>
+        `;
     },
-  };
+    async afterRender() {
+        const dataAdat = await bolDataSource.createAdat();
+        const adatContainer = document.querySelector('#item-container');
+        adatContainer.innerHTML += createAdat(adat);
+  },
+};
   export default Budaya;
