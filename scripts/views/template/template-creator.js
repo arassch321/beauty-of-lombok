@@ -1,7 +1,9 @@
-const createAdat = (adat) => `
-                    <img src="${adat.gambar}" alt="${adat.gambar}">
-                    <a href="${`/#/detail/${adat.id_budaya}`}">Pasir Pink</a>
-`;
+const createAdat = (data) => `
+        <div class="detail__item swiper-slide" >
+                <img src="${data.gambar}" alt="${data.gambar}">
+                <a href="${`/#/detail/${data.id_budaya}`}">${data.nama}</a>
+        </div>
+`;                
 
 export {
     createAdat,

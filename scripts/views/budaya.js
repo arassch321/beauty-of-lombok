@@ -1,5 +1,7 @@
+import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
 import { createAdat } from "./template/template-creator"
+
 
 const Budaya = {
     async render() {
@@ -25,9 +27,7 @@ const Budaya = {
         </div>
         
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper" >
-                <div class="detail__item swiper-slide" id="item-container">
-                </div>
+            <div class="swiper-wrapper" id="swiper-container">
 
             </div>
 
@@ -35,14 +35,14 @@ const Budaya = {
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-        <div id='item-creator'>
-        </div>
         `;
     },
     async afterRender() {
-        const dataAdat = await bolDataSource.createAdat();
-        const adatContainer = document.querySelector('#item-container');
-        adatContainer.innerHTML += createAdat(adat);
+        const dataAdat = await bolDataSource.adat();
+        const adatContainer = document.querySelector('#swiper-container');
+        dataAdat.forEeach((data) => {
+            adatContainer.innerHTML += createAdat(data);
+        });
   },
 };
   export default Budaya;

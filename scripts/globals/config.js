@@ -1,5 +1,5 @@
 const CONFIG = {
-    BASE_URL: 'http://localhost:5000/api'
+    BASE_URL: 'https://api-bol.herokuapp.com/api'
 };
 
 export default CONFIG;
