@@ -40,9 +40,9 @@ const Budaya = {
     async afterRender() {
         const dataAdat = await bolDataSource.adat();
         const adatContainer = document.querySelector('#swiper-container');
-        dataAdat.forEeach((data) => {
+        dataAdat.forEach((data) => {
             adatContainer.innerHTML += createAdat(data);
-        });
-  },
+          });
+    },
 };
   export default Budaya;
