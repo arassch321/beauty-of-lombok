@@ -7,6 +7,7 @@
     <link rel="icon" href="#">
     <title>Beauty Of Lombok</title>
     <link rel="stylesheet" href="../scripts/style/main.css">
+    <link rel="stylesheet" href="../scripts/style/responsive.css">
     
 </head>
 <body>
@@ -21,17 +22,17 @@
                 <ul class="nav__list">
                     <li><a href="../templates/wisata.html" class="nav__item">Wisata</a></li>
                     <li><a href="#" class="nav__item">Budaya</a></li>
-                    <li><a href="#" class="nav__item">Saran</a></li>
+                    <li><a href="../templates/saran.html" class="nav__item">Saran</a></li>
                     <li><a href="#" class="nav__item">AboutUs</a></li>
                 </ul>
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span class="m1"></span>
+                    <span class="m2"></span>
+                    <span class="m3"></span>
+                </div>
             </nav>
         </div>
-
-        <!-- App Navbar -->
-        <nav id="drawerMob" class="navMobile">
-            <ul class="nav__list">
-            </ul>
-        </nav>
     </header>
 
 
@@ -44,10 +45,20 @@
             <div class="detailed__judul">Gunung Rinjani
             </div>
         </div>
-        <div class="detailed__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius delectus id architecto suscipit, veritatis voluptates porro saepe itaque culpa esse debitis nostrum accusamus tempore, temporibus est ducimus expedita fuga quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel veniam, magnam dolorum hic fugiat. Quisquam reprehenderit et est suscipit! Voluptatibus quod reiciendis ullam saepe beatae, delectus autem hic quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, in enim molestiae officiis cumque harum possimus maiores porro illum quas exercitationem atque rerum rem quo labore similique magnam voluptate consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ducimus, ab ad eum officiis amet quidem excepturi dicta. Quaerat laudantium corporis eum impedit ut pariatur labore autem quos sit expedita.</div>
+        <div class="detailed__desc"></div>
     </main>
 <footer>
     Beauty Of Lombok, Copyright &copy; 2022 by CPSG-68
 </footer>
 </body>
 </html>
+<script>
+    /* Navbar Menu SLider*/
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+    
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+    });
+</script>
+

@@ -1,0 +1,125 @@
+@media screen and (max-width: 500px){
+    .navDesktop ul li{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nav__list{
+        position:fixed;
+        left: 0;
+        right: 0;
+        margin-top: 70px;
+        flex-direction: row;
+        background-color: #ffffff;
+        transform: translateX(-200%);
+        transition: all 0.5s;
+        justify-content: space-evenly;
+    }
+    .nav__list.slide {
+        transform: translateX(0);
+    }
+    .navDesktop ul li{
+        padding: 0 10px;
+    }
+    .menu-toggle {
+        display: flex;
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+
+    .hero__judul{
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .hero__desc{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    @keyframes slide {
+        25%{
+            background-image: url('/OIL.jpg');
+            min-height: 550px;
+        }
+    }
+    .hero{
+        min-height: 550px;   
+    }
+    
+    .mandalika {
+        display: none;
+    }
+    .mandalika__desc {
+        padding-left: 0px;
+    }
+    .mandalika__desc h1{
+        font-size: 20px;
+        margin-top: 50px;        
+    }
+    .mandalika__desc p{
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .judul {
+        font-size: 30px;
+    }
+
+    .wisata_detail_container{
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+        margin-top: -30px;
+    }
+
+    .wisata_detail{
+        width: 200px;
+        height: 80px;   
+        border-radius: 30px;
+        margin-bottom: -10px;
+    }
+
+    .wisata_detail a{
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .detail__container { 
+        flex-direction: row;
+        padding-left: 50px;
+        align-items: center;
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .detail__item img{
+        margin-top: 50px;
+        width: 349px;
+        height: 216px;
+        border-radius: 40px;
+    }
+
+    .hero__detail img{
+        min-height: 400px;
+    }
+    
+    .detailed__container{
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+    }
+    
+    .detailed__judul{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .detailed__desc{
+        font-size: 15px;
+        justify-content: center;
+        text-align: justify;
+    }
+
+}

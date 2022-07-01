@@ -1,4 +1,5 @@
-
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -32,8 +33,7 @@ header {
 }
 
 /* Navigation */
-.navDesktop,
-.navMobile {
+.navDesktop{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -41,32 +41,28 @@ header {
     width: 100%;
     position: fixed;
     z-index: 50;
-    box-shadow: rgba(0, 0, 0, 0.267)  0 0 20px 5px ;
+    box-shadow: rgba(72, 72, 72, 0.283)  0 0 15px 5px ;
     
 }
 
-.navDesktop ul,
-.navMobile ul{ 
+.navDesktop ul{ 
     display: flex;
     list-style: none;
     color: #f8f3dd;
 
 }
-.navDesktop ul li,
-.navMobile ul li{
+.navDesktop ul li{
     padding: 0 40px;
 }
-.navDesktop ul li a,
-.navMobile ul li a{
-    color: #000000;
+.navDesktop ul li a{
+    color: #323232;
     text-decoration: none; 
     margin-top: 20px;
     font-size: 2em;  
     text-align: center;
 }
 
-.navDesktop ul li a:hover,
-.navMobile ul li a:hover{
+.navDesktop ul li a:hover{
     color: #60AA60;
     border-bottom: solid 1px #60AA60;
 
@@ -79,30 +75,73 @@ header {
 
 }
 
-
-.navMobile {
+.menu-toggle {
     display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
 }
+
+.menu-toggle input {
+    margin: 0;
+    position:absolute;
+    width: 40px;
+    height: 22px;
+    left: -10px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2.5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0px, 1px);
+    background-color: rgb(0, 0, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(0px, 0px);
+    background-color: rgb(0, 0, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
 
 @keyframes slide {
     25%{
         background-image: url('../../img/OIL.jpg');
         background-size: cover;
-        min-height: 733px;
+        min-height: 600px;
         width: 100%;
         background-position: center;
     }
 }
 /* Hero Element */
 .hero{
-    min-height: 733px;
+    min-height: 600px;
     width: 100%;
     background-image: url('../../img/OIP.jpg');
     background-size: cover;
     background-position: center;
     animation: slide 45s infinite;
     overflow: hidden;
-    
  
 }
 .hero__judul{
@@ -110,7 +149,7 @@ header {
     font-size: 64px;
     color: #FFFFFF;
     padding-left: 50px;
-    padding-top: 550px;
+    padding-top: 350px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero__desc{
@@ -151,7 +190,6 @@ main {
 }
 .mandalika__desc p{
     font-weight: 400;
-    text-align: justify;
     font-size: 25px;
     
 }
@@ -189,6 +227,8 @@ main {
     border-radius: 53px;
     box-shadow: rgba(0, 0, 0, 0.158)  0 -10px 20px 2px;
     padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .wisata_detail a{
     font-weight: 500;
@@ -204,16 +244,14 @@ main {
     color: white;
 }
 
-.detail__container { 
-    display: flex;
-    flex-direction: row;
-    padding-left: 100px;
-    margin-bottom: 300px;
-    overflow-y: hidden;
-    padding-bottom: 80px;
+.swiper{
+    width: 90%;
 }
 
-
+.swiper-wrapper{
+    margin-bottom: 120px;
+    flex-shrink: 2 !important;
+}
 .detail__item img{
     margin-top: 100px;
     width: 549px;
@@ -235,22 +273,24 @@ main {
 
 .hero__detail img{
     display: flex;
-    min-height: 733px;
+    min-height: 600px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .detailed__container{
-    border-bottom: 5px solid black;
-    margin-bottom: 100px;
+    border-bottom: 5px solid #323232;
+    margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .detailed__judul{
+    color: #323232;
+    padding-top: 10px;
     font-weight: 700;
-    font-size: 128px;
+    font-size: 32px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -258,12 +298,68 @@ main {
 }
 
 .detailed__desc{
+    color: #4e4e4e;
     font-weight: 400;
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
     justify-content: center;
     text-align: justify;
+    margin-bottom: 50px;
+}
+
+.content__container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.judul__form{
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    color: #6E60A8;
+    border-bottom: solid 2px #000000;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box-tengah{
+    margin-top: 100px;
+    width: 70%;
+    height: 550px;
+    background: #00000014;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.formSaran{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saranInput{
+    width: 80%;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.submit{
+    width: 20%;
+    height: 50px;
+    background:#F58646;
+    border-radius: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 600px;
+    border: none;
 }
 
 footer {
