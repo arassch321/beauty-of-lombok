@@ -244,32 +244,14 @@ main {
     color: white;
 }
 
-
-
 .swiper{
     width: 90%;
 }
 
 .swiper-wrapper{
     margin-bottom: 120px;
+    flex-shrink: 2 !important;
 }
-
-.swiper-pagination-bullet {
-    height: 7px !important;
-    width: 26px !important;
-    border-radius: 25px !important;
-    margin-bottom: 20px !important;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: #6E60A8 !important;
-}
-
-
-.swiper-button-next, .swiper-button-prev{
-    color: #6E60A8 !important;
-}
-
 .detail__item img{
     margin-top: 100px;
     width: 549px;
