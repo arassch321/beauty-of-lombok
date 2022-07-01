@@ -102,6 +102,10 @@
         border-radius: 40px;
     }
 
+    detail__item a{
+        font-size: 30px !important;
+    }
+
     .hero__detail img{
         min-height: 400px;
     }

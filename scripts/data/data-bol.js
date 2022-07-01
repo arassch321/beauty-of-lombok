@@ -7,6 +7,12 @@ class bolDataSource {
     return responseJson.data;
   }
 
+  static async seni() {
+    const response = await fetch(API_ENDPOINT.KESENIAN)
+    const responseJson = await response.json();
+    return responseJson.data;
+  }
+
   static async detailAdat(id) {
     const response = await fetch(API_ENDPOINT.DETAIL_ADAT(id))
     const responseJson = await response.json();

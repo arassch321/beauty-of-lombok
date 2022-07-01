@@ -13,7 +13,7 @@ class Navigation extends HTMLElement {
           </a>
           <ul class="nav__list">
               <li><a href="/#/wisata" class="nav__item">Wisata</a></li>
-              <li><a href="#/budaya" class="nav__item">Budaya</a></li>
+              <li><a href="#/adat" class="nav__item">Budaya</a></li>
               <li><a href="/#/saran" class="nav__item">Saran</a></li>
               <li><a href="/#" class="nav__item">AboutUs</a></li>
           </ul>

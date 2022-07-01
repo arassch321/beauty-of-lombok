@@ -245,13 +245,21 @@ main {
 }
 
 .swiper{
-    width: 90%;
+    
 }
 
 .swiper-wrapper{
     margin-bottom: 120px;
-    flex-shrink: 2 !important;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 0 50px 10px;
 }
+
+.swiper-slide{
+
+}
+
 .detail__item img{
     margin-top: 100px;
     width: 549px;

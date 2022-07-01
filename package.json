@@ -40,8 +40,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.5",
-    "serviceworker-webpack-plugin": "^1.0.1",
-    "swiper": "^8.2.6"
+    "serviceworker-webpack-plugin": "^1.0.1"
   },
   "license": "ISC"
 }
