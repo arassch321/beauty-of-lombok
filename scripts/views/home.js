@@ -11,7 +11,7 @@ const home = {
             </div>
 
             <div class="mandalika__desc">
-            <a href=""><h1>The Mandalika, Kuta Lombok</h1></a>
+            <h1>The Mandalika, Kuta Lombok</h1>
             <p>Kawasan wisata ini berdekatan dengan beberapa pantai indah yang ada di sebelah selatan pulau Lombok. Masih bersuasana alam asli yang belum terlalu banyak terjamah, wilayah ini begitu kaya dengan keindahan hamparan pesisir pantai yang luas, lengkap dengan kelembutan pasir putihnya. Mulai dari Pantai Kuta Mandalika, Pantai Seger, Pantai Serenting, Putri Nyale, Pantai Tanjung Aan, sampai Pantai Gerupuk, semua siap memanjakan Anda sekeluarga.</p>
             </div>
 
