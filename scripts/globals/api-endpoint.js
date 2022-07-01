@@ -10,7 +10,8 @@ const API_ENDPOINT = {
     PANTAI: `${CONFIG.BASE_URL}/pantai`,
     GUNBUK: `${CONFIG.BASE_URL}/gunbuk`,
     ETC_WISATA: `${CONFIG.BASE_URL}/etcw`,
-    KOMENTAR: `${CONFIG.BASE_URL}/komentar`
+    KOMENTAR: `${CONFIG.BASE_URL}/komentar`,
+    SARAN: `${CONFIG.BASE_URL}/saran`,
 };
 
 export default API_ENDPOINT;
