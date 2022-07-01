@@ -2,7 +2,7 @@ import CONFIG from './config';
 
 const API_ENDPOINT = {
     ADAT: `${CONFIG.BASE_URL}/adat`,
-    DETAIL: (id) => `${CONFIG.BASE_URL}/budaya/${id}`,
+    DETAIL_ADAT: (id) => `${CONFIG.BASE_URL}/budaya/${id}`,
     KESENIAN: `${CONFIG.BASE_URL}/kesenian`,
     KULINER: `${CONFIG.BASE_URL}/kuliner`,
     ETC_BUDAYA: `${CONFIG.BASE_URL}/etcb`,
