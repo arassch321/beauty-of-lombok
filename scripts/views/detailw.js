@@ -14,6 +14,7 @@ const DetailW = {
         const detailWisata = await bolDataSource.detailWisata(url.id);
         const detailContainer = document.querySelector('.details_cont');
         detailContainer.innerHTML = createDetailWisata(detailWisata.data[0]);
+        sessionStorage.setItem('jenis', detailWisata.data[0].jenis);
 
         const urlKomentar = UrlParser.parseActiveUrlWithoutCombiner();
         const detailKomentarWisata = await bolDataSource.detailKomentarWisata(urlKomentar.id);

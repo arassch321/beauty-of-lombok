@@ -37,18 +37,6 @@ class bolDataSource {
         return responseJson.data;
     }
 
-    static async insertSaran(dataInput) {
-        const response = await fetch(API_ENDPOINT.SARAN, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(dataInput),
-        });
-        const responseJson = await response.json();
-        return responseJson;
-    }
-
     static async detailBudaya(id) {
         const response = await fetch(API_ENDPOINT.DETAIL_BUDAYA(id))
         const responseJson = await response.json();
@@ -72,8 +60,28 @@ class bolDataSource {
         const responseJson = await response.json();
         return responseJson;
     }
+    static async insertSaran(dataInput) {
+        const response = await fetch(API_ENDPOINT.SARAN, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataInput),
+        });
+        const responseJson = await response.json();
+        return responseJson;
+    }
+    static async insertKomentar(dataInput) {
+        const response = await fetch(API_ENDPOINT.TAMBAH_KOMENTAR, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataInput),
+        });
+        const responseJson = await response.json();
+        return responseJson;
+    }
 }
-
-
 
 export default bolDataSource;

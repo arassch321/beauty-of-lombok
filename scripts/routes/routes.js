@@ -11,18 +11,18 @@ import DetailW from '../views/detailw';
 import tambahkomentar from '../views/tambahkomentar';
 
 const routes = {
-  '/': home,
-  '/home': home,
-  '/adat': Adat,
-  '/kesenian': Seni,
-  '/saran': saran,
-  '/detail/:id': Detail,
-  '/detailw/:id': DetailW,
-  '/kuliner': Kuliner,
-  '/pantai': Pantai,
-  '/gunung': Gunung,
-  '/airterjun': AirTerjun,
-  '/tambahkomentar': tambahkomentar,
+    '/': home,
+    '/home': home,
+    '/adat': Adat,
+    '/kesenian': Seni,
+    '/saran': saran,
+    '/detail/:id': Detail,
+    '/detailw/:id': DetailW,
+    '/kuliner': Kuliner,
+    '/pantai': Pantai,
+    '/gunung': Gunung,
+    '/airterjun': AirTerjun,
+    '/tambahkomentar/:id': tambahkomentar,
 };
 
 export default routes;

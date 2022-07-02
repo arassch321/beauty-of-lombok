@@ -6,6 +6,7 @@ const API_ENDPOINT = {
     DETAIL_WISATA: (id) => `${CONFIG.BASE_URL}/wisata/${id}`,
     DETAIL_KOMENTAR_WISATA: (id) => `${CONFIG.BASE_URL}/komentarwisata/${id}`,
     DETAIL_KOMENTAR_BUDAYA: (id) => `${CONFIG.BASE_URL}/komentarbudaya/${id}`,
+    TAMBAH_KOMENTAR: `${CONFIG.BASE_URL}/komentar`,
     KESENIAN: `${CONFIG.BASE_URL}/kesenian`,
     KULINER: `${CONFIG.BASE_URL}/kuliner`,
     ETC_BUDAYA: `${CONFIG.BASE_URL}/etcb`,
