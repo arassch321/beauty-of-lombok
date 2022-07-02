@@ -10,18 +10,11 @@ const Detail = {
     },
     async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
-
-        try {
-            const data = await bolDataSource.detailAdat(url.id);
-            const detailAdat = createDetailAdat(data);
-            document.querySelector('.details_cont').innerHTML = detailAdat;
-        } catch (error) {
-            console.log(error);
-            restaurantsContainer.innerHTML = `
-            Error: $ { err }, swipe up to refresh!`;
-        }
+        const detailAdat = await bolDataSource.detailAdat(url.id);
+        console.log(detailAdat);
+        const detailContainer = document.querySelector('.details_cont');
+        detailContainer.innerHTML = createDetailAdat(detailAdat.data[0]);
     },
-
 };
 
 export default Detail;
