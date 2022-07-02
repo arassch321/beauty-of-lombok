@@ -5,16 +5,21 @@ import UrlParser from '../routes/url-parser';
 const Detail = {
     async render() {
         return `
-            <div class="details_cont"
-            </div>
-        
+            <div class="details_cont"></div>
         `;
     },
     async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
-        const detailAdat = await bolDataSource.detailAdat(url.id);
-        const detailContainer = document.querySelector('.details_cont');
-        detailContainer.innerHTML = createDetailAdat(detailAdat);
+
+        try {
+            const data = await bolDataSource.detailAdat(url.id);
+            const detailAdat = createDetailAdat(data);
+            document.querySelector('.details_cont').innerHTML = detailAdat;
+        } catch (error) {
+            console.log(error);
+            restaurantsContainer.innerHTML = `
+            Error: $ { err }, swipe up to refresh!`;
+        }
     },
 
 };
