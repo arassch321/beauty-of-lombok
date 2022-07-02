@@ -1,6 +1,6 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
-import { createSeni } from './template/template-creator';
+import { createSliderBudaya } from './template/template-creator';
 
 const Seni = {
     async render() {
@@ -17,7 +17,7 @@ const Seni = {
                     <a href="/#/kesenian">Kesenian</a>
                 </div>
                 <div class="wisata_detail">
-                    <a href="">Air Terjun</a>
+                    <a href="/#/kuliner">Kuliner</a>
                 </div>
                 <div class="wisata_detail">
                     <a href="">etc.</a>
@@ -38,7 +38,7 @@ const Seni = {
         const dataSeni = await bolDataSource.seni();
         const seniContainer = document.querySelector('#swiper-container');
         dataSeni.forEach((data) => {
-            seniContainer.innerHTML += createSeni(data);
+            seniContainer.innerHTML += createSliderBudaya(data);
           });
     },
 };

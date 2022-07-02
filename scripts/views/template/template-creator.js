@@ -1,18 +1,18 @@
-const createAdat = (data) => `
+const createSliderBudaya = (data) => `
         <div class="detail__item swiper-slide" >
-                <img src="${data.gambar}" alt="${data.gambar}">
+                <img src="${data.gambar}" alt="${data.gambar}" class="gambar_detail">
                 <a href="${`/#/detail/${data.id_budaya}`}">${data.nama}</a>
         </div>
 `;
 
-const createSeni = (data) => `
+const createSliderWisata = (data) => `
         <div class="detail__item swiper-slide" >
-                <img src="${data.gambar}" alt="${data.gambar}">
-                <a href="${`/#/detail/${data.id_budaya}`}">${data.nama}</a>
+                <img src="${data.gambar}" alt="${data.gambar}" class="gambar_detail">
+                <a href="${`/#/detail/${data.id_wisata}`}">${data.nama}</a>
         </div>
 `;
 
-const createDetailAdat = (data) => `
+const createDetail = (data) => `
         <div class="hero__detail">
                 <img src="${data.gambar}" alt="${data.nama}">
         </div>
@@ -24,7 +24,7 @@ const createDetailAdat = (data) => `
 `; 
 
 export {
-    createAdat,
-    createDetailAdat,
-    createSeni,
+    createSliderBudaya,
+    createDetail,
+    createSliderWisata,
   };

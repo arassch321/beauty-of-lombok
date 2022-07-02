@@ -102,8 +102,10 @@
         border-radius: 40px;
     }
 
-    detail__item a{
-        font-size: 30px !important;
+    .detail__item a{
+        font-size: 30px;
+        margin-top: -70px;
+        box-sizing: border-box;
     }
 
     .hero__detail img{

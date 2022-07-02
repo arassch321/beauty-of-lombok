@@ -2,7 +2,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
 import { createSliderBudaya } from "./template/template-creator"
 
-const Adat = {
+const Kuliner = {
     async render() {
       return `
         <div class="content__container__wisata">
@@ -35,11 +35,11 @@ const Adat = {
         </div>`;
     },
     async afterRender() {
-        const dataAdat = await bolDataSource.adat();
-        const adatContainer = document.querySelector('#swiper-container');
-        dataAdat.forEach((data) => {
-            adatContainer.innerHTML += createSliderBudaya(data);
+        const dataKuliner = await bolDataSource.kuliner();
+        const kulinerContainer = document.querySelector('#swiper-container');
+        dataKuliner.forEach((data) => {
+            kulinerContainer.innerHTML += createSliderBudaya(data);
           });
     },
 };
-  export default Adat;
+  export default Kuliner;

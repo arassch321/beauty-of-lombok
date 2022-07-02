@@ -13,6 +13,24 @@ class bolDataSource {
     return responseJson.data;
   }
 
+  static async kuliner() {
+    const response = await fetch(API_ENDPOINT.KULINER)
+    const responseJson = await response.json();
+    return responseJson.data;
+  }
+
+  static async pantai() {
+    const response = await fetch(API_ENDPOINT.PANTAI)
+    const responseJson = await response.json();
+    return responseJson.data;
+  }
+
+  static async gunung() {
+    const response = await fetch(API_ENDPOINT.GUNBUK)
+    const responseJson = await response.json();
+    return responseJson.data;
+  }
+
   static async insertSaran(dataInput) {
     const response = await fetch(API_ENDPOINT.SARAN, {
         method: "POST",

@@ -41,7 +41,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 50;
-    box-shadow: rgba(72, 72, 72, 0.283)  0 0 15px 5px ;
+    box-shadow: rgba(0, 0, 0, 0.046)  0 0 15px 5px ;
     
 }
 
@@ -225,7 +225,7 @@ main {
     width: 241px;
     height: 82px;   
     border-radius: 53px;
-    box-shadow: rgba(0, 0, 0, 0.158)  0 -10px 20px 2px;
+    box-shadow: rgb(0 0 0 / 12%) 4px 5px 9px 0px;
     padding-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
@@ -244,20 +244,13 @@ main {
     color: white;
 }
 
-.swiper{
-    
-}
 
 .swiper-wrapper{
     margin-bottom: 120px;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 0 0 50px 10px;
-}
-
-.swiper-slide{
-
+    padding: 0 0 50px 50px;
 }
 
 .detail__item img{
@@ -267,6 +260,7 @@ main {
     border-radius: 50px;
     display: flex;
     margin-right: 50px;
+    box-shadow: rgb(0 0 0 / 20%) 6px 11px 12px 0px;
 }
 
 .detail__item a{
@@ -277,6 +271,8 @@ main {
     color: #ffffff;
     margin-top: -100px;
     margin-left: 50px;
+    text-transform: capitalize;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(0, 0, 0, 0.3);
 }
 
 .hero__detail img{
@@ -376,5 +372,5 @@ footer {
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.158)  0 -10px 20px 2px ;
+    box-shadow: rgba(0, 0, 0, 0.064)  0 -10px 20px 2px ;
 }

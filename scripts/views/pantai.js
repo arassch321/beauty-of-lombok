@@ -1,23 +1,23 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
-import { createSliderBudaya } from "./template/template-creator"
+import { createSliderWisata } from "./template/template-creator"
 
-const Adat = {
+const Pantai = {
     async render() {
       return `
         <div class="content__container__wisata">
             <div class="judul">
-                Kebudayaan
+                Objek Wisata
             </div>
             <div class="wisata_detail_container">
                 <div class="wisata_detail">
-                    <a href="/#/adat">Adat</a>
+                    <a href="/#/pantai">Pantai</a>
                 </div>
                 <div class="wisata_detail">
-                    <a href="/#/kesenian">Kesenian</a>
+                    <a href="/#/gunung">Gunung</a>
                 </div>
                 <div class="wisata_detail">
-                    <a href="/#/kuliner">Kuliner</a>
+                    <a href="/#/airterjun">Air Terjun</a>
                 </div>
                 <div class="wisata_detail">
                     <a href="">etc.</a>
@@ -35,11 +35,11 @@ const Adat = {
         </div>`;
     },
     async afterRender() {
-        const dataAdat = await bolDataSource.adat();
-        const adatContainer = document.querySelector('#swiper-container');
-        dataAdat.forEach((data) => {
-            adatContainer.innerHTML += createSliderBudaya(data);
+        const dataPantai = await bolDataSource.pantai();
+        const pantaiContainer = document.querySelector('#swiper-container');
+        dataPantai.forEach((data) => {
+            pantaiContainer.innerHTML += createSliderWisata(data);
           });
     },
 };
-  export default Adat;
+  export default Pantai;
