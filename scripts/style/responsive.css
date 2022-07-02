@@ -27,6 +27,13 @@
         margin-top: 25px;
         margin-right: 25px;
     }
+    .landing__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 80px;
+        padding-right: 20px;
+    }
 
     .hero__judul{
         font-weight: 700;
@@ -56,11 +63,12 @@
     }
     .mandalika__desc h1{
         font-size: 20px;
-        margin-top: 50px;        
+        margin-top: 50px;       
     }
     .mandalika__desc p{
         font-size: 15px;
         margin-bottom: 50px;
+        margin-top: 20px; 
     }
 
     .judul {
@@ -102,12 +110,15 @@
         border-radius: 40px;
     }
 
-    detail__item a{
-        font-size: 30px !important;
+    .swiper-slide a{
+        font-size: 30px;
+        margin-top: -70px;
+        margin-left: 40px;
     }
-
-    .hero__detail img{
-        min-height: 400px;
+    .hero__detail img {
+        width: 70%;
+        height: 200px;
+        margin-bottom: 20px;
     }
     
     .detailed__container{
@@ -119,11 +130,34 @@
         font-size: 20px;
         padding-top: 10px;
     }
+    .lok-cont {
+        padding-left: 0;
+    }
     
     .detailed__desc{
         font-size: 15px;
         justify-content: center;
         text-align: justify;
+    }
+
+    .cont-mapcom {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .cont-com {
+        width: 100%;
+        height: 400px;
+        background: #ffffff;
+        box-shadow: 7px 7px 10px rgb(0 0 0 / 10%);
+        border-radius: 30px;
+    }
+    .map-detail {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .coment {
+        width: 250px;
     }
 
 }
