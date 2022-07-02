@@ -10,7 +10,7 @@ const Pantai = {
                 Objek Wisata
             </div>
             <div class="wisata_detail_container">
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/pantai">Pantai</a>
                 </div>
                 <div class="wisata_detail">

@@ -10,7 +10,7 @@ const Adat = {
                 Kebudayaan
             </div>
             <div class="wisata_detail_container">
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/adat">Adat</a>
                 </div>
                 <div class="wisata_detail">
@@ -36,6 +36,7 @@ const Adat = {
     },
     async afterRender() {
         const dataAdat = await bolDataSource.adat();
+        console.log(dataAdat);
         const adatContainer = document.querySelector('#swiper-container');
         dataAdat.forEach((data) => {
             adatContainer.innerHTML += createSliderBudaya(data);

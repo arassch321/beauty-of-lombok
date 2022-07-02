@@ -41,15 +41,13 @@ class bolDataSource {
     });
     const responseJson = await response.json();
     return responseJson;
-}
-
-  static async detailAdat(id) {
-    const response = await fetch(API_ENDPOINT.DETAIL_ADAT(id))
-    const responseJson = await response.json();
-    return responseJson;
   }
+
+  static async detailBudaya(id) {
+    const response = await fetch(API_ENDPOINT.BUDAYA(id),);
+    return response.json;
+  }
+  
 }
-
-
 
 export default bolDataSource;

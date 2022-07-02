@@ -16,7 +16,7 @@ const Kuliner = {
                 <div class="wisata_detail">
                     <a href="/#/kesenian">Kesenian</a>
                 </div>
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/kuliner">Kuliner</a>
                 </div>
                 <div class="wisata_detail">

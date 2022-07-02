@@ -237,10 +237,10 @@ main {
     color: #F58646;
 }
 
-.wisata_detail:active{
+.activex{
     background-color: #F58646;
 }
-.wisata_detail a:active{
+.activex a{
     color: white;
 }
 

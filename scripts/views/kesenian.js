@@ -13,7 +13,7 @@ const Seni = {
                 <div class="wisata_detail">
                     <a href="/#/adat">Adat</a>
                 </div>
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/kesenian">Kesenian</a>
                 </div>
                 <div class="wisata_detail">

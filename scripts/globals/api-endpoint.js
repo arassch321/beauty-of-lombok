@@ -2,7 +2,6 @@ import CONFIG from './config';
 
 const API_ENDPOINT = {
     ADAT: `${CONFIG.BASE_URL}/adat`,
-    DETAIL_ADAT: (id) => `${CONFIG.BASE_URL}/budaya/${id}`,
     KESENIAN: `${CONFIG.BASE_URL}/kesenian`,
     KULINER: `${CONFIG.BASE_URL}/kuliner`,
     ETC_BUDAYA: `${CONFIG.BASE_URL}/etcb`,
@@ -12,6 +11,9 @@ const API_ENDPOINT = {
     ETC_WISATA: `${CONFIG.BASE_URL}/etcw`,
     KOMENTAR: `${CONFIG.BASE_URL}/komentar`,
     SARAN: `${CONFIG.BASE_URL}/saran`,
+    BUDAYA: (id) => `${CONFIG.BASE_URL}budaya/${id}`,
+
+
 };
 
 export default API_ENDPOINT;

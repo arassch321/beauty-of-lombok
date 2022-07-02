@@ -13,7 +13,7 @@ const Gunung = {
                 <div class="wisata_detail">
                     <a href="/#/pantai">Pantai</a>
                 </div>
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/gunung">Gunung</a>
                 </div>
                 <div class="wisata_detail">
