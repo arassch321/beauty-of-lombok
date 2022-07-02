@@ -159,5 +159,23 @@
     .coment {
         width: 250px;
     }
+    .judul__form {
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    .formSaran{
+        margin-top: 20px;
+        height: 20px;
+    }
+    .saranInput{
+        border-radius: 10px;
+    }
+    .box-tengah{
+        height: 427px;
+    }
+    .submit{
+        padding: 10px;
+        width: 50%;
+    }
 
 }

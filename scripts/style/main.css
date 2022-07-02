@@ -349,9 +349,9 @@ main {
     margin-top: 100px;
     width: 70%;
     height: 550px;
-    background: #00000014;
     border-radius: 50px;
     justify-content: center;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .lok-cont{
@@ -400,6 +400,7 @@ main {
     justify-content: space-between;
     padding: 30px; 
     align-items: center; 
+    padding-bottom: 15px;
 }
 .cont-tambah p{
     font-size: 20px;
@@ -418,16 +419,51 @@ main {
 }
 
 .coment{
-    width: 450px;
-    height: 111px;
-    background: rgba(0, 0, 0, 0.1);
+    width: 470px;
     border-radius: 16px;
     margin-left: 20px;
     padding: 20px;
     margin-bottom: 10px;
     font-size: 12px;
+    box-shadow: -1px -1px 10px 4px rgba(0, 0, 0, 0.046);
 }
 
+.divider{
+    border-bottom: 1.5px solid #323232;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 10px;
+}
+
+.com-nama{
+    font-weight: bold;
+    color: #323232;
+    font-size: 15px;
+}
+
+.com-email{
+    color: #494949;
+}
+.com-tgl{
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #3232324b;
+    font-weight: bold;
+
+}
+
+.com-komentar{
+    padding-bottom: 10px;
+}
+
+.nama-email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .formSaran{
     margin-top: 50px;
@@ -439,10 +475,13 @@ main {
 .saranInput{
     width: 80%;
     height: 60px;
-    background: #D9D9D9;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
+    border: solid 1.5px black;
+}
+.saranInput:hover{
+    border-bottom: solid 5px black;
 }
 
 .submit{
@@ -452,8 +491,14 @@ main {
     border-radius: 20px;
     color: white;
     margin-top: 30px;
-    margin-left: 600px;
     border: none;
+    cursor:pointer ;
+    font-weight: bold;
+}
+.submit:hover{
+    border: solid 2px #ff965a;
+    background: white;
+    color: #ff965a;
 }
 
 footer {

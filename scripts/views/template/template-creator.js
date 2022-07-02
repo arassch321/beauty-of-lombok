@@ -38,12 +38,6 @@ const createDetailBudaya = (data) => `
                 <a href="/#/tambahkomentar">Tambah Komentar</a>
             </div>
             <div class="container-coment">
-                <div class="coment">
-                    <div class="com-nama">Tes</div>
-                    <div class="com-email">mxkasdok@gmail.com</div>
-                    <div class="com-tgl">2022-06-30T15:22:37.000Z</div>
-                    <div class="com-komentar">tes komentar</div>
-                </div>
             </div>
         </div>
         </div>
@@ -74,6 +68,7 @@ const createDetailWisata = (data) => `
         <p>Komentar</p>
         <a href="/#/tambahkomentar">Tambah Komentar</a>
         </div>
+        <div class="divider"></div>
         <div class="container-coment">
         
         </div>
@@ -89,9 +84,22 @@ const createHome = (data) => `
 `;
 
 const createKomentarWisata = (data) =>`
-<div class="coment">
+        <div class="coment">
+                <div class="nama-email">
                 <div class="com-nama">${data.nama}</div>
                 <div class="com-email">${data.email}</div>
+                </div>
+                <div class="com-tgl">${data.created_at}</div>
+                <div class="com-komentar">${data.komentar}</div>
+        </div>
+`;
+
+const createKomentarBudaya = (data) =>`
+        <div class="coment">
+                <div class="nama-email">
+                <div class="com-nama">${data.nama}</div>
+                <div class="com-email">${data.email}</div>
+                </div>
                 <div class="com-tgl">${data.created_at}</div>
                 <div class="com-komentar">${data.komentar}</div>
         </div>
@@ -104,4 +112,5 @@ export {
     createDetailWisata,
     createHome,
     createKomentarWisata,
+    createKomentarBudaya,
   };

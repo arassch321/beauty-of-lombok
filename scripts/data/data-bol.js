@@ -66,6 +66,12 @@ class bolDataSource {
         const responseJson = await response.json();
         return responseJson;
     }
+
+    static async detailKomentarBudaya(id) {
+        const response = await fetch(API_ENDPOINT.DETAIL_KOMENTAR_BUDAYA(id))
+        const responseJson = await response.json();
+        return responseJson;
+    }
 }
 
 

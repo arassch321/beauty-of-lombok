@@ -1,5 +1,5 @@
 import bolDataSource from '../data/data-bol';
-import { createDetailBudaya } from './template/template-creator';
+import { createKomentarBudaya, createDetailBudaya } from './template/template-creator';
 import UrlParser from '../routes/url-parser';
 
 const Detail = {
@@ -14,6 +14,13 @@ const Detail = {
         const detailContainer = document.querySelector('.details_cont');
         detailContainer.innerHTML = createDetailBudaya(detailBudaya.data[0]);
         console.log(detailBudaya);
+
+        const urlKomentar = UrlParser.parseActiveUrlWithoutCombiner();
+        const detailKomentarWisata = await bolDataSource.detailKomentarBudaya(urlKomentar.id);
+        const detailKomentarContainer = document.querySelector('.container-coment');
+        detailKomentarWisata.data.forEach((data) => {
+            detailKomentarContainer.innerHTML += createKomentarBudaya(data);
+        })
     },
 };
 
