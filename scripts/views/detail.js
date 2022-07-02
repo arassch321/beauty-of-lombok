@@ -13,6 +13,7 @@ const Detail = {
         const detailBudaya = await bolDataSource.detailBudaya(url.id);
         const detailContainer = document.querySelector('.details_cont');
         detailContainer.innerHTML = createDetailBudaya(detailBudaya.data[0]);
+        console.log(detailBudaya);
     },
 };
 
