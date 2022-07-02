@@ -35,7 +35,7 @@ const saran = {
                 const dataInput = {
                     nama: inputNama.value,
                     email: inputEmail.value,
-                    saranwb: inputSaran.value,
+                    saran: inputSaran.value,
                     lokasi: inputLokasi.value,
                 };
                 bolDataSource.insertSaran(dataInput);

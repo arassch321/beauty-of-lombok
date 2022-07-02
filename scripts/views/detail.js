@@ -13,7 +13,7 @@ const Detail = {
         const detailBudaya = await bolDataSource.detailBudaya(url.id);
         const detailContainer = document.querySelector('.details_cont');
         detailContainer.innerHTML = createDetailBudaya(detailBudaya.data[0]);
-        console.log(detailBudaya);
+        sessionStorage.setItem('jenis', detailBudaya.data[0].jenis);
 
         const urlKomentar = UrlParser.parseActiveUrlWithoutCombiner();
         const detailKomentarWisata = await bolDataSource.detailKomentarBudaya(urlKomentar.id);

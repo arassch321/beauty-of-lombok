@@ -35,8 +35,9 @@ const createDetailBudaya = (data) => `
         <div class="cont-com">
             <div class="cont-tambah">
                 <p>Komentar</p>
-                <a href="/#/tambahkomentar">Tambah Komentar</a>
+                <a href="/#/tambahkomentar/${data.id_budaya}">Tambah Komentar</a>
             </div>
+            <div class="divider"></div>
             <div class="container-coment">
             </div>
         </div>
@@ -66,7 +67,7 @@ const createDetailWisata = (data) => `
         <div class="cont-com">
         <div class="cont-tambah">
         <p>Komentar</p>
-        <a href="/#/tambahkomentar">Tambah Komentar</a>
+        <a href="/#/tambahkomentar/${data.id_wisata}">Tambah Komentar</a>
         </div>
         <div class="divider"></div>
         <div class="container-coment">
@@ -75,7 +76,9 @@ const createDetailWisata = (data) => `
         </div>
         </div>
 
-`;
+`
+
+
 const createHome = (data) => `
         <div class="mandalika__desc">
         <h1>${data.nama}</h1>
