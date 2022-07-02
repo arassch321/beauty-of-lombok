@@ -18,17 +18,17 @@ class bolDataSource {
         const responseJson = await response.json();
         return responseJson.data;
     }
-    
+
     static async pantai() {
-    const response = await fetch(API_ENDPOINT.PANTAI)
-    const responseJson = await response.json();
-    return responseJson.data;
+        const response = await fetch(API_ENDPOINT.PANTAI)
+        const responseJson = await response.json();
+        return responseJson.data;
     }
 
     static async gunung() {
-    const response = await fetch(API_ENDPOINT.GUNBUK)
-    const responseJson = await response.json();
-    return responseJson.data;
+        const response = await fetch(API_ENDPOINT.GUNBUK)
+        const responseJson = await response.json();
+        return responseJson.data;
     }
 
     static async airTerjun() {
@@ -57,6 +57,12 @@ class bolDataSource {
 
     static async detailWisata(id) {
         const response = await fetch(API_ENDPOINT.DETAIL_WISATA(id))
+        const responseJson = await response.json();
+        return responseJson;
+    }
+
+    static async detailKomentarWisata(id) {
+        const response = await fetch(API_ENDPOINT.DETAIL_KOMENTAR_WISATA(id))
         const responseJson = await response.json();
         return responseJson;
     }

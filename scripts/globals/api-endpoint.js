@@ -4,6 +4,7 @@ const API_ENDPOINT = {
     ADAT: `${CONFIG.BASE_URL}/adat`,
     DETAIL_BUDAYA: (id) => `${CONFIG.BASE_URL}/budaya/${id}`,
     DETAIL_WISATA: (id) => `${CONFIG.BASE_URL}/wisata/${id}`,
+    DETAIL_KOMENTAR_WISATA: (id) => `${CONFIG.BASE_URL}/komentarwisata/${id}`,
     KESENIAN: `${CONFIG.BASE_URL}/kesenian`,
     KULINER: `${CONFIG.BASE_URL}/kuliner`,
     ETC_BUDAYA: `${CONFIG.BASE_URL}/etcb`,
