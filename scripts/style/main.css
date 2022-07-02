@@ -510,4 +510,11 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.064)  0 -10px 20px 2px ;
 }
 
-
+.about-judul{
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #6E60A8;
+    display: flex;
+    justify-content: center;
+}

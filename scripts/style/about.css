@@ -1,0 +1,92 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
+.abt-cont{
+    display: grid;
+    grid-template-columns: 500px 500px ;
+    justify-content: center;
+}
+figure.snip0056 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 380px;
+    max-width: 480px;
+    width: 100%;
+    color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);    
+  }
+  .linkedin a{
+    font-size: 20px;
+  }
+
+  figure.snip0056 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  figure.snip0056 > img {
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    position: relative;
+    float: right;
+    right: -10%;
+    z-index: 1;
+  }
+  figure.snip0056 figcaption {
+    padding: 20px 30px 20px 20px;
+    position: absolute;
+    left: 0;
+    width: 50%;
+  }
+  figure.snip0056 figcaption h2,
+  figure.snip0056 figcaption p {
+    margin: 0;
+    text-align: left;
+    padding: 10px 0;
+    width: 100%;
+  }
+  figure.snip0056 figcaption h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  figure.snip0056 figcaption h2 span {
+    font-weight: 800;
+  }
+  figure.snip0056 figcaption p {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+
+  figure.snip0056 figcaption a {
+    opacity: 0.3;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  figure.snip0056 figcaption a:hover {
+    opacity: 0.8;
+  }
+  figure.snip0056 .position {
+    width: 100%;
+    text-align: left;
+    padding: 15px 30px;
+    font-size: 0.9em;
+    opacity: 1;
+    font-style: italic;
+    color: #ffffff;
+    background: #6E60A8;
+    clear: both;
+  }
+  figure.snip0056.back .position {
+    background: #ff965a;
+  }
+  figure.snip0056:hover > img,
+  figure.snip0056.hover > img {
+    right: -5%;
+  }
