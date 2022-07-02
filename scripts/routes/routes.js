@@ -1,20 +1,26 @@
 import home from '../views/home';
-import wisata from '../views/wisata';
 import saran from '../views/saran';
-import Budaya from '../views/adat';
 import Detail from '../views/detail';
 import Seni from '../views/kesenian';
 import Adat from '../views/adat';
+import Kuliner from '../views/kuliner';
+import Pantai from '../views/pantai';
+import Gunung from '../views/gunung';
+import AirTerjun from '../views/airterjun';
+import DetailW from '../views/detailw';
 
 const routes = {
   '/': home,
   '/home': home,
-  '/wisata': wisata,
-  '/budaya': Budaya,
   '/adat': Adat,
   '/kesenian': Seni,
   '/saran': saran,
   '/detail/:id': Detail,
+  '/detailw/:id': DetailW,
+  '/kuliner': Kuliner,
+  '/pantai': Pantai,
+  '/gunung': Gunung,
+  '/airterjun': AirTerjun,
 };
 
 export default routes;

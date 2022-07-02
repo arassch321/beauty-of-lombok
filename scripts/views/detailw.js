@@ -1,8 +1,8 @@
 import bolDataSource from '../data/data-bol';
-import { createDetailBudaya } from './template/template-creator';
+import { createDetailWisata } from './template/template-creator';
 import UrlParser from '../routes/url-parser';
 
-const Detail = {
+const DetailW = {
     async render() {
         return `
             <div class="details_cont"></div>
@@ -10,10 +10,10 @@ const Detail = {
     },
     async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
-        const detailBudaya = await bolDataSource.detailBudaya(url.id);
+        const detailWisata = await bolDataSource.detailWisata(url.id);
         const detailContainer = document.querySelector('.details_cont');
-        detailContainer.innerHTML = createDetailBudaya(detailBudaya.data[0]);
+        detailContainer.innerHTML = createDetailWisata(detailWisata.data[0]);
     },
 };
 
-export default Detail;
+export default DetailW;

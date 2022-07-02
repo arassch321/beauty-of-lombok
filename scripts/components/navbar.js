@@ -12,7 +12,7 @@ class Navigation extends HTMLElement {
               <img src="/logo panjang.png" class="nav__logo" alt="logo">
           </a>
           <ul class="nav__list">
-              <li><a href="/#/wisata" class="nav__item">Wisata</a></li>
+              <li><a href="/#/pantai" class="nav__item">Wisata</a></li>
               <li><a href="#/adat" class="nav__item">Budaya</a></li>
               <li><a href="/#/saran" class="nav__item">Saran</a></li>
               <li><a href="/#" class="nav__item">AboutUs</a></li>
