@@ -392,7 +392,10 @@ main {
 .container-coment{
     overflow-y: scroll;
     height: 274px;
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cont-tambah{
@@ -526,4 +529,9 @@ footer {
     color: #ff965a;
     margin-top: 10px;
     margin-bottom: -80px;
+}
+
+.navDesktop ul li a .is-active{
+    color: #60AA60;
+    border-bottom: solid 1px #60AA60;
 }
