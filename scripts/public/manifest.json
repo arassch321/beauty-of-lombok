@@ -2,34 +2,45 @@
     "short_name": "BoL",
     "name": "Beauty Of Lombok",
     "display": "standalone",
-    "icons": [
-      {
-        "src": "icon/icon-48.png",
-        "sizes": "48x48",
-        "type": "image/png"
-      },
-      {
-        "src": "icon/icon-96.png",
-        "sizes": "96x96",
-        "type": "image/png"
-      },
-      {
-        "src": "icon/icon-144.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": "icon/icon-196.png",
-        "sizes": "196x196",
-        "type": "image/png"
-      },
-      {
-        "src": "icon/icon-384.png",
-        "sizes": "384x384",
-        "type": "image/png"
-      }
+    "description": "Pulau Lombok berada di dalam kepulauan Sunda Kecil atau Nusa Tenggara",
+    "theme_color": "#d84315",
+    "icons": [{
+            "src": "icon/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon/icon-196.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon/icon-384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
     ],
     "start_url": "index.html?launcher=true",
     "copy_right": "beautyoflombok",
     "background_color": "#EEEEEE"
-  }
+}
