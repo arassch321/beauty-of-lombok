@@ -9,7 +9,7 @@ class Navigation extends HTMLElement {
       <!-- Desktop Navbar -->
       <nav id="drawer" class="navDesktop">
           <a href="/#">
-              <img src="/img/logo panjang.png" class="nav__logo" alt="logo">
+              <img src="img/logo panjang.png" class="nav__logo" alt="logo">
           </a>
           <ul class="nav__list">
               <li><a href="/#/pantai" class="nav__item">Wisata</a></li>

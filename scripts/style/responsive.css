@@ -130,14 +130,19 @@
         font-size: 20px;
         padding-top: 10px;
     }
-    .lok-cont {
-        padding-left: 0;
+
+    .detailed__lok {
+        font-size: 15px;
     }
     
     .detailed__desc{
         font-size: 15px;
         justify-content: center;
         text-align: justify;
+    }
+
+    svg.bi.bi-geo-alt-fill {
+        margin-right: 15px;
     }
 
     .cont-mapcom {
@@ -180,5 +185,10 @@
     .judul__lain{
         font-size: 20px;
         margin-bottom: -20px;
+    }
+
+    .abt-cont{
+        grid-template-columns: auto !important;
+        align-items: center !important;
     }
 }
