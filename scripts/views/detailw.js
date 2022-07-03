@@ -28,11 +28,13 @@ const DetailW = {
 
         const allDataWisata = await bolDataSource.allDataWisata();
         const allDContainer = document.querySelector('#swiper-container');
-        allDataWisata.forEach((data) => {
+        const allDataWisataRandom = allDataWisata.sort(() => Math.random() - 0.5);
+        const allDataWisataPick7 = allDataWisataRandom.slice(0, 7);
+        allDataWisataPick7.forEach((data) => {
             allDContainer.innerHTML += createSliderWisata(data);
-          });
+        });
 
-        console.log(detailKomentarWisata);
+        console.log(detailKomentarWisataPick7);
     },
 };
 

@@ -28,9 +28,12 @@ const Detail = {
 
         const allDataBudaya = await bolDataSource.allDataBudaya();
         const allDContainer = document.querySelector('#swiper-container');
-        allDataBudaya.forEach((data) => {
+        const allDataBudayaRandom = allDataBudaya.sort(() => Math.random() - 0.5);
+        const allDataBudayaPick7 = allDataBudayaRandom.slice(0, 7);
+        allDataBudayaPick7.forEach((data) => {
             allDContainer.innerHTML += createSliderBudaya(data);
-          });
+        });
+        console.log(allDataBudayaPick7)
     },
 };
 
