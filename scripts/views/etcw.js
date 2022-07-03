@@ -2,7 +2,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
 import { createSliderWisata } from "./template/template-creator"
 
-const Pantai = {
+const etcwisata = {
     async render() {
       return `
         <div class="content__container__wisata">
@@ -10,7 +10,7 @@ const Pantai = {
                 Objek Wisata
             </div>
             <div class="wisata_detail_container">
-                <div class="wisata_detail activex">
+                <div class="wisata_detail">
                     <a href="/#/pantai">Pantai</a>
                 </div>
                 <div class="wisata_detail">
@@ -19,7 +19,7 @@ const Pantai = {
                 <div class="wisata_detail">
                     <a href="/#/airterjun">Air Terjun</a>
                 </div>
-                <div class="wisata_detail">
+                <div class="wisata_detail activex">
                     <a href="/#/etcw">etc.</a>
                 </div>
             </div>
@@ -35,11 +35,11 @@ const Pantai = {
         </div>`;
     },
     async afterRender() {
-        const dataPantai = await bolDataSource.pantai();
-        const pantaiContainer = document.querySelector('#swiper-container');
-        dataPantai.forEach((data) => {
-            pantaiContainer.innerHTML += createSliderWisata(data);
+        const dataEtc = await bolDataSource.etcw();
+        const etcContainer = document.querySelector('#swiper-container');
+        dataEtc.forEach((data) => {
+            etcContainer.innerHTML += createSliderWisata(data);
           });
     },
 };
-  export default Pantai;
+  export default etcwisata;

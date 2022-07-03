@@ -1,8 +1,8 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import bolDataSource from "../data/data-bol";
-import { createSeni, createSliderBudaya } from './template/template-creator';
+import { createAdat, createSliderBudaya } from "./template/template-creator"
 
-const Seni = {
+const etcbudaya = {
     async render() {
       return `
       <div class="content__container__wisata">
@@ -13,13 +13,13 @@ const Seni = {
           <div class="wisata_detail">
               <a href="/#/adat">Adat</a>
           </div>
-          <div class="wisata_detail activex">
+          <div class="wisata_detail">
               <a href="/#/kesenian">Kesenian</a>
           </div>
           <div class="wisata_detail">
               <a href="/#/kuliner">Kuliner</a>
           </div>
-          <div class="wisata_detail">
+          <div class="wisata_detail activex">
               <a href="/#/etcb">etc.</a>
           </div>
       </div>
@@ -32,14 +32,15 @@ const Seni = {
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-  </div>`;
+  </div>
+  `;
     },
     async afterRender() {
-        const dataSeni = await bolDataSource.seni();
-        const seniContainer = document.querySelector('#swiper-container');
-        dataSeni.forEach((data) => {
-            seniContainer.innerHTML += createSliderBudaya(data);
+        const dataEtcB = await bolDataSource.etcb();
+        const adatContainer = document.querySelector('#swiper-container');
+        dataEtcB.forEach((data) => {
+            adatContainer.innerHTML += createSliderBudaya(data);
           });
     },
 };
-  export default Seni;
+  export default etcbudaya;

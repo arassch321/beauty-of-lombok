@@ -16,6 +16,9 @@ const API_ENDPOINT = {
     ETC_WISATA: `${CONFIG.BASE_URL}/etcw`,
     KOMENTAR: `${CONFIG.BASE_URL}/komentar`,
     SARAN: `${CONFIG.BASE_URL}/saran`,
+    BUDAYA: `${CONFIG.BASE_URL}/budaya`,
+    WISATA: `${CONFIG.BASE_URL}/wisata`,
+
 };
 
 export default API_ENDPOINT;

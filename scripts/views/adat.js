@@ -20,7 +20,7 @@ const Adat = {
               <a href="/#/kuliner">Kuliner</a>
           </div>
           <div class="wisata_detail">
-              <a href="">etc.</a>
+              <a href="/#/etcb">etc.</a>
           </div>
       </div>
   </div>

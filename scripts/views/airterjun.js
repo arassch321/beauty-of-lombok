@@ -20,7 +20,7 @@ const AirTerjun = {
                     <a href="/#/airterjun">Air Terjun</a>
                 </div>
                 <div class="wisata_detail">
-                    <a href="">etc.</a>
+                    <a href="/#/etcw">etc.</a>
                 </div>
             </div>
         </div>

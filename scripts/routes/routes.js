@@ -10,6 +10,8 @@ import AirTerjun from '../views/airterjun';
 import DetailW from '../views/detailw';
 import tambahkomentar from '../views/tambahkomentar';
 import about from '../views/about';
+import etcwisata from '../views/etcw';
+import etcbudaya from '../views/etcb';
 
 const routes = {
     '/': home,
@@ -24,6 +26,8 @@ const routes = {
     '/gunung': Gunung,
     '/airterjun': AirTerjun,
     '/tambahkomentar/:id': tambahkomentar,
+    '/etcw': etcwisata,
+    '/etcb': etcbudaya,
     '/about': about,
 
 };

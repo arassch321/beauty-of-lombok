@@ -31,6 +31,30 @@ class bolDataSource {
         return responseJson.data;
     }
 
+    static async etcw() {
+        const response = await fetch(API_ENDPOINT.ETC_WISATA)
+        const responseJson = await response.json();
+        return responseJson.data;
+    }
+
+    static async etcb() {
+        const response = await fetch(API_ENDPOINT.ETC_BUDAYA)
+        const responseJson = await response.json();
+        return responseJson.data;
+    }
+
+    static async allDataBudaya() {
+        const response = await fetch(API_ENDPOINT.BUDAYA)
+        const responseJson = await response.json();
+        return responseJson.data;
+    }
+
+    static async allDataWisata() {
+        const response = await fetch(API_ENDPOINT.WISATA)
+        const responseJson = await response.json();
+        return responseJson.data;
+    }
+
     static async airTerjun() {
         const response = await fetch(API_ENDPOINT.AIR_TERJUN)
         const responseJson = await response.json();
