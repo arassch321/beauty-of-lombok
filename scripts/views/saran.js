@@ -9,7 +9,7 @@ const saran = {
           <div class="judul__form">Saran Wisata & Budaya Baru</div>
           <form action="" class="formSaran">   
                   <input type="text" class="saranInput" id="inputNama" placeholder="Nama"  >
-                  <input type="text" class="saranInput" id="inputEmail" placeholder="Email" >
+                  <input type="email" class="saranInput" id="inputEmail" placeholder="Email" >
                   <input type="text" class="saranInput" id="inputSaran" placeholder="Saran Wisata & Budaya" >
                   <input type="text" class="saranInput" id="inputLokasi" placeholder="Lokasi">
               <button class="submit" id="submit-saran">Tambah Saran</button>
