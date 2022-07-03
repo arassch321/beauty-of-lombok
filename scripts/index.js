@@ -3,6 +3,7 @@ import '../scripts/components/footer';
 import '../scripts/components/navbar';
 import './style/main.css';
 import './style/responsive.css';
+import './style/about.css';
 import App from './app';
 import swRegister from './utils/sw-register';
 

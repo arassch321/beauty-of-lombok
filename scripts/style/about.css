@@ -27,16 +27,21 @@ figure.snip0056 {
   figure.snip0056 > img {
     height: 200px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 4px solid #6E60A8;
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
     position: relative;
     float: right;
-    right: -10%;
+    right: -15%;
+    top: 5%;
     z-index: 1;
   }
+  figure.snip0056.back > img {
+    border: 4px solid #ff965a;
+  }
+
   figure.snip0056 figcaption {
     padding: 20px 30px 20px 20px;
     position: absolute;

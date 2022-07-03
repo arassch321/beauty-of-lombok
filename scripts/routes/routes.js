@@ -9,6 +9,7 @@ import Gunung from '../views/gunung';
 import AirTerjun from '../views/airterjun';
 import DetailW from '../views/detailw';
 import tambahkomentar from '../views/tambahkomentar';
+import about from '../views/about';
 
 const routes = {
     '/': home,
@@ -23,6 +24,8 @@ const routes = {
     '/gunung': Gunung,
     '/airterjun': AirTerjun,
     '/tambahkomentar/:id': tambahkomentar,
+    '/about': about,
+
 };
 
 export default routes;

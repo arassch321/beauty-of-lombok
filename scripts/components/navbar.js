@@ -15,7 +15,7 @@ class Navigation extends HTMLElement {
               <li><a href="/#/pantai" class="nav__item">Wisata</a></li>
               <li><a href="#/adat" class="nav__item">Budaya</a></li>
               <li><a href="/#/saran" class="nav__item">Saran</a></li>
-              <li><a href="/#" class="nav__item">AboutUs</a></li>
+              <li><a href="/#/about" class="nav__item">AboutUs</a></li>
           </ul>
           <div class="menu-toggle">
               <input type="checkbox">
