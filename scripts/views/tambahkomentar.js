@@ -40,34 +40,32 @@ const tambahkomentar = {
             if (inputNama.value === "" || inputEmail.value === "" || inputKomentar.value === "") {
                 alert("Form harus diisi semua");
             } else {
-                if (jenis.value == "1" || jenis.value == "2" || jenis.value == "3" || jenis.value == "4") {
-                    const id_budaya = null;
+                if (jenis == "1" || jenis == "2" || jenis == "3" || jenis == "4") {
                     const dataInput = {
-                        created_at: created_at.value,
+                        created_at: created_at,
                         komentar: inputKomentar.value,
                         nama: inputNama.value,
                         email: inputEmail.value,
-                        id_wisata: id.value,
-                        id_budaya: null,
+                        id_wisata: null,
+                        id_budaya: id,
                     };
                     bolDataSource.insertKomentar(dataInput);
                     alert("Komentar Budaya berhasil dikirim");
                     history.go(-1);
                 }
-                if (jenis.value == "5" || jenis.value == "6" || jenis.value == "7" || jenis.value == "8") {
+                if (jenis == "5" || jenis == "6" || jenis == "7" || jenis == "8") {
                     const dataInput = {
-                        created_at: created_at.value,
+                        created_at: created_at,
                         komentar: inputKomentar.value,
                         nama: inputNama.value,
                         email: inputEmail.value,
-                        id_wisata: null,
-                        id_budaya: id.value,
+                        id_wisata: id,
+                        id_budaya: null,
                     };
                     bolDataSource.insertKomentar(dataInput);
                     alert("Komentar Wisata berhasil dikirim");
                     history.go(-1);
                 }
-                alert("ERROR");
             }
         })
 
