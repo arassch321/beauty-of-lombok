@@ -126,7 +126,7 @@ header {
 
 @keyframes slide {
     25%{
-        background-image: url('../../img/OIL.jpg');
+        background-image: url('../public/img/OIL.jpg');
         background-size: cover;
         min-height: 600px;
         width: 100%;
@@ -137,7 +137,7 @@ header {
 .hero{
     min-height: 600px;
     width: 100%;
-    background-image: url('../../img/OIP.jpg');
+    background-image: url('../public/img/OIP.jpg');
     background-size: cover;
     background-position: center;
     animation: slide 45s infinite;

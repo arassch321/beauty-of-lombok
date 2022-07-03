@@ -47,7 +47,7 @@
 
     @keyframes slide {
         25%{
-            background-image: url('/OIL.jpg');
+            background-image: url('../public/img/OIL.jpg');
             min-height: 550px;
         }
     }

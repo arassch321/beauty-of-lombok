@@ -69,7 +69,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'img/'),
+          from: path.resolve(__dirname, 'scripts/public/'),
           to: path.resolve(__dirname, 'dist/'),
           // globOptions: {
           //   ignore: ['heros'],
