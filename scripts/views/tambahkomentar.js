@@ -51,7 +51,7 @@ const tambahkomentar = {
                     };
                     bolDataSource.insertKomentar(dataInput);
                     alert("Komentar Budaya berhasil dikirim");
-                    history.go(-1);
+                    history.go(-1, location.reload(true));
                 }
                 if (jenis == "5" || jenis == "6" || jenis == "7" || jenis == "8") {
                     const dataInput = {
@@ -64,7 +64,7 @@ const tambahkomentar = {
                     };
                     bolDataSource.insertKomentar(dataInput);
                     alert("Komentar Wisata berhasil dikirim");
-                    history.go(-1);
+                    history.go(-1, location.reload(true));
                 }
             }
         })
